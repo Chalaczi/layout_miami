@@ -1,9 +1,12 @@
 .button {
+  border: none;
+  background-color: white;
   border-radius: 40px;
-  display: block;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  text-align: center;
+  color:black;
   width: 392px;
   height: 56px;
   font-weight: 700;
