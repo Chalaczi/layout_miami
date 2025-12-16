@@ -1,17 +1,17 @@
-.article {
-  &__name {
+.address {
+  &__label {
     font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 24px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
     line-height: 140%;
     letter-spacing: 0;
   }
 
-  &__description {
+  &__content {
     font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-style: Regular;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
