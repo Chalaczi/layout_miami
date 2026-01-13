@@ -21,13 +21,13 @@
   </head>
   <body>
     <header class="header" id="home">
-      <nav class="navigation">
+      <nav class="navigation header__navigation">
         <a href="#" class="navigation__logo">
           <img src="./src/images/MyBiKE.svg" alt="Logo">
         </a>
 
         <div class="navigation__actions">
-          <a href=""><img src="./src/images/Icon-Phone-call.svg" alt="Phone"></a>
+          <a href="#"><img src="./src/images/Icon-Phone-call.svg" alt="Phone"></a>
           <a href="#menu"><img src="./src/images/Icon-Burger-menu.svg" alt="Menu"></a>
         </div>
       </nav>
@@ -36,8 +36,8 @@
 
     <div class="menu" id="menu">
       <nav class="navigation">
-        <a href="#home"><img src="./src/images/MyBiKE blk.svg" alt=""></a>
-        <a href="#home"><img src="./src/images/X icon.svg" alt=""></a>
+        <a href="#home"><img src="./src/images/MyBiKE blk.svg" alt="3"></a>
+        <a href="#home"><img src="./src/images/X icon.svg" alt="#"></a>
       </nav>
 
       <nav class="links menu__links">
@@ -52,7 +52,7 @@
 
       <p class="menu__paragraph">+1 234 5555-55-55</p>
       <p class="menu__paragraph">
-        <a href="" class="menu__link">Book a test ride</a>
+        <a href="#" class="menu__link">Book a test ride</a>
       </p>
 
     </div>
@@ -67,32 +67,39 @@
       </div>
       <section class="section main__section" id="compare-bikes">
         <h3 class="title title--section section__title">Compare bikes</h3>
-        <article class="model section__model">
-          <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 1.png" alt="bike1">
-          <h4 class="model__name">Sporty 4</h4>
-          <p class="model__description">
-              The iconic frame brought to a new performance height as a sporty, active ride.
-          </p>
-          <h4 class="model__price"> $ 2 590</h4>
-        </article>
+        <div class="bike">
+          <article class="model bike__model">
+            <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 1.png"
+            alt="bike1">
+            <h4 class="model__name">Sporty 4</h4>
+            <p class="model__description">
+                The iconic frame brought to a new performance height as a sporty, active ride.
+            </p>
+            <h4 class="model__price"> $ 2 590</h4>
+          </article>
 
-        <article class="model section__model">
-          <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 2.png" alt="bike2">
-          <h4 class="model__name">Ride in town ST</h4>
-          <p class="model__description">
-              An open frame for an upright riding position as the most comfortable ride in town.
-          </p>
-          <h4 class="model__price"> $ 2 590</h4>
-        </article>
+          <article class="model bike__model">
+            <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 2.png"
+            alt="bike2">
+            <h4 class="model__name">Ride in town ST</h4>
+            <p class="model__description">
+                An open frame for an upright riding position as the most comfortable ride in town.
+            </p>
+            <h4 class="model__price"> $ 2 590</h4>
+          </article>
 
-        <article class="model section__model">
-          <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 3 (1).jpg" alt="bike3">
-          <h4 class="model__name">Agile ride 3</h4>
-          <p class="model__description">
-              The lightweight frame that has earned its street tread as a sleek, agile ride.
-          </p>
-          <h4 class="model__price"> $ 2 090</h4>
-        </article>
+          <article class="model bike__model">
+            <img class="model__photo" src="./src/images/Screenshot 2022-01-14 at 11.12 3 (1).jpg"
+            alt="bike3">
+            <h4 class="model__name">Agile ride 3</h4>
+            <p class="model__description">
+                The lightweight frame that has earned its street tread as a sleek, agile ride.
+            </p>
+            <h4 class="model__price"> $ 2 090</h4>
+          </article>
+
+        </div>
+
       </section>
 
       <section class="section main__section" id="details">
@@ -100,11 +107,13 @@
         <article class="article section__article">
           <div class="picturies article__picturies">
             <div class="picturies__item picturies__item--big">
-              <img src="./src/images/picture-4.jpg" class="picturies__image" alt="1">
+              <img src="./src/images/picture-4.jpg" class="picturies__image"
+              alt="1">
             </div>
 
             <div class="picturies__item picturies__item--small">
-              <img src="./src/images/picture-5.jpg" class="picturies__image" alt="2">
+              <img src="./src/images/picture-5.jpg" class="picturies__image"
+              alt="2">
             </div>
           </div>
           <h4 class="article__title">Auto Unlock</h4>
@@ -116,11 +125,13 @@
         <article class="article section__article">
           <div class="picturies article__picturies">
             <div class="picturies__item picturies__item--big">
-              <img src="./src/images/picture-6.jpg" class="picturies__image" alt="1">
+              <img src="./src/images/picture-6.jpg" class="picturies__image"
+              alt="1">
             </div>
 
             <div class="picturies__item picturies__item-small">
-              <img src="./src/images/picture-7.jpg" class="picturies__image" alt="2">
+              <img src="./src/images/picture-7.jpg" class="picturies__image"
+              alt="2">
             </div>
           </div>
           <h4 class="article__title">Range & Integrated lights</h4>
@@ -132,11 +143,13 @@
         <article class="article section__article">
           <div class="picturies article__picturies">
             <div class="picturies__item picturies__item--small">
-              <img src="./src/images/picture-8.jpg" class="picturies__image" alt="1">
+              <img src="./src/images/picture-8.jpg" class="picturies__image"
+              alt="1">
             </div>
 
             <div class="picturies__item picturies__item--big">
-              <img src="./src/images/picture-9.jpg" class="picturies__image" alt="2">
+              <img src="./src/images/picture-9.jpg" class="picturies__image"
+              alt="2">
             </div>
           </div>
           <h4 class="article__title">Hydraulic disc brakes & Lightweight</h4>
@@ -183,7 +196,7 @@
         </address>
       </section>
       <footer class="footer">
-        <img class="" src="./src/images/footer pic.jpg" alt="footer bike">
+        <img src="./src/images/footer pic.jpg" alt="footer bike">
       </footer>
     </main>
   </body>

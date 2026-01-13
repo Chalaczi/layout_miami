@@ -4,14 +4,14 @@
   }
 }
 
-@mixin grid {
+@mixin grid() {
     display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 130px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 
-  @include mixins.desktop {
-    grid-template-columns: repeat(12, 63px);
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
     gap: 24px;
   }
 }
