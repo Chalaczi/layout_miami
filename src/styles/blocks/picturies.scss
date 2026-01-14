@@ -8,20 +8,20 @@
     position: relative;
     padding-top: 100%;
 
-      @include mixins.desktop {
+      @include desktop {
       grid-column: span 6;
       padding-top: 320px;
     }
 
     &--small {
-      @include mixins.desktop {
+      @include desktop {
         grid-column: span 4;
       }
     }
 
     &--big {
-      @include mixins.desktop {
-        grid-column: span 4;
+      @include desktop {
+        grid-column: span 8;
       }
     }
   }
