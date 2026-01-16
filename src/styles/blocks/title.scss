@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .title {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -10,15 +12,27 @@
 
   color: #fff;
 
+  @include desktop {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+  }
+
   &--secondary {
     font-family: Poppins, sans-serif;
     font-weight: 500;
     float: left;
     font-style: Medium;
-    font-size: 32px;
+    font-size: 23px;
     line-height: 100%;
     letter-spacing: -1.5px;
     color: #fff;
+
+    @include desktop {
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+    }
   }
 
   &--section {
@@ -31,5 +45,11 @@
     letter-spacing: -1.5px;
     text-align: center;
     text-transform: capitalize;
+
+    @include desktop {
+      font-size: 62px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+    }
   }
 }

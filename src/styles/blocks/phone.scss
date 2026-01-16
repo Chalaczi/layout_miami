@@ -1,0 +1,33 @@
+@use '../utils/mixins';
+
+.phone {
+
+  &__label {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+
+    transform: translateX(calc(-100% - 20px));
+
+    &__icon {
+    width: 18px;
+    height: 18px ;
+
+      @include desktop {
+      width: 24px;
+      height: 24px ;
+  };
+    }
+
+    &:not(:hover) &__label {
+      @include mixins.visually-hidden;
+    }
+  }
+}

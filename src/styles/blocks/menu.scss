@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .menu {
   position: fixed;
   top: 0;
@@ -8,16 +10,28 @@
   background-color: #c2c2c2;
   padding: 0 20px 20px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   z-index: 100;
+
+  @include grid;
+
+  align-content: start;
+
 
   &:target {
     transform: translateX(0);
   }
 
+  &__navigation {
+    grid-column: span 2;
+
+    @include desktop {
+      grid-column: span 12;
+    }
+  }
+
   &__links {
     margin-bottom: 40px;
+    grid-column: span 2;
   }
 
   &__paragraph {

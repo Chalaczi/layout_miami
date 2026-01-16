@@ -12,6 +12,7 @@
   font-weight: 700;
   font-size: 16px;
 
+
   &--primary {
     font-family: Poppins, sans-serif;
     font-weight: 700;
@@ -19,5 +20,10 @@
     font-size: 16px;
     line-height: 27px;
     text-align: center;
+  }
+
+    &:hover {
+    background: #FFF;
+    box-shadow: 1px 4px 16px 0 #E8E8F066;
   }
 }
