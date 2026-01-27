@@ -1,9 +1,7 @@
-@use '../utils/mixins.scss';
+@use '../utils/mixins';
 
 .bike {
-
   @include grid;
-
   &__model {
     margin-bottom: 40px;
     grid-column: span 2;

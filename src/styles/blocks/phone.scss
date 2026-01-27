@@ -1,7 +1,23 @@
 @use '../utils/mixins';
 
 .phone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 
+  // Ikona słuchawki
+  &_icon { // Poprawiono z &__icon na &_icon (zgodnie z HTML)
+    width: 18px;
+    height: 18px;
+
+    @include desktop {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  // Napis z numerem
   &__label {
     font-family: Poppins, sans-serif;
     font-weight: 700;
@@ -9,25 +25,23 @@
     line-height: 16px;
     letter-spacing: 2px;
     text-align: right;
-    vertical-align: middle;
     text-transform: uppercase;
     color: #FFF;
+
     position: absolute;
+    right: 100%; // Ustawia numer na lewo od słuchawki
+    margin-right: 20px;
+    white-space: nowrap;
 
-    transform: translateX(calc(-100% - 20px));
+    // Domyślnie ukryty
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
 
-    &__icon {
-    width: 18px;
-    height: 18px ;
-
-      @include desktop {
-      width: 24px;
-      height: 24px ;
-  };
-    }
-
-    &:not(:hover) &__label {
-      @include mixins.visually-hidden;
-    }
+  // POKAZYWANIE PO NAJECHANIU
+  &:hover &__label {
+    opacity: 1;
+    visibility: visible;
   }
 }

@@ -9,21 +9,23 @@
   letter-spacing: -1.5px;
   text-align: center;
   vertical-align: middle;
+  padding-bottom: 88px;
 
   color: #fff;
 
   @include desktop {
-    font-size: 64px;
+    font-size: 80px;
     line-height: 100%;
     letter-spacing: -1.5px;
   }
+
 
   &--secondary {
     font-family: Poppins, sans-serif;
     font-weight: 500;
     float: left;
     font-style: Medium;
-    font-size: 23px;
+    font-size: 32px;
     line-height: 100%;
     letter-spacing: -1.5px;
     color: #fff;
@@ -47,7 +49,8 @@
     text-transform: capitalize;
 
     @include desktop {
-      font-size: 62px;
+      font-size: px;
+      font-size: 64px;
       line-height: 100%;
       letter-spacing: -1.5px;
     }

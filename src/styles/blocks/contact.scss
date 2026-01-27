@@ -1,4 +1,4 @@
-@use '../utils/mixins.scss';
+@use '../utils/mixins';
 
 .contact {
   @include grid;
@@ -17,6 +17,7 @@
   @include desktop {
     &__form {
       grid-column: 1 / 7;
+      padding-bottom: 164px;
     }
   }
 }
