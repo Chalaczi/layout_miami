@@ -9,5 +9,10 @@
       width: 187px;
       height: 56px;
     }
+
+    @include tablet {
+      width: 187px;
+      height: 56px;
+    }
   }
 }

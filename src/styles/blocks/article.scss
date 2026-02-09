@@ -17,6 +17,10 @@
     line-height: 140%;
     letter-spacing: 0;
     margin-bottom: 16px;
+
+    @include desktop {
+      width: 70%;
+    }
   }
 
   &__picturies {

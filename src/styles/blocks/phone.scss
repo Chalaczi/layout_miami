@@ -15,6 +15,10 @@
       width: 24px;
       height: 24px;
     }
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   // Napis z numerem

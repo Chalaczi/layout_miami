@@ -8,7 +8,12 @@
   vertical-align: middle;
 
   @include desktop {
-    width: 32px; // Powiększenie kontenera na desktopie
+    width: 32px;
+    height: 32px;
+  }
+
+  @include tablet {
+    width: 32px;
     height: 32px;
   }
 

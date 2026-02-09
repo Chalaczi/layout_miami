@@ -7,5 +7,11 @@
       width: 21.33px;
       height: 21.33px;
     }
+
+    @include tablet {
+      width: 21.33px;
+      height: 21.33px;
+
   }
+}
 }
