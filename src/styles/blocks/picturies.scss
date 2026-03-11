@@ -3,12 +3,22 @@
 .picturies {
   @include grid;
 
+  @include tablet {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
   &__item {
     width: 100%;
     position: relative;
     padding-top: 100%;
 
-      @include desktop {
+    @include desktop {
+      grid-column: span 6;
+      padding-top: 320px;
+    }
+
+    @include tablet {
       grid-column: span 6;
       padding-top: 320px;
     }
@@ -17,10 +27,18 @@
       @include desktop {
         grid-column: span 4;
       }
+
+      @include tablet {
+        grid-column: span 4;
+      }
     }
 
     &--big {
       @include desktop {
+        grid-column: span 8;
+      }
+
+      @include tablet {
         grid-column: span 8;
       }
     }

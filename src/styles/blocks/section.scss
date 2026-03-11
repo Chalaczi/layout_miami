@@ -8,4 +8,9 @@
   &__article {
     margin-bottom: 40px;
   }
+  &--bikes {
+    @include tablet {
+      padding: 92px 104px 0;
+    }
+  }
 }

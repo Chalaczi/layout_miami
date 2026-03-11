@@ -13,10 +13,10 @@
   align-items: center;
 
   @include desktop {
-      height: 555px;
+    height: 555px;
   }
 
   @include tablet {
-      height: 480px;
+    height: 480px;
   }
 }

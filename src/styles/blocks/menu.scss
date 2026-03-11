@@ -22,7 +22,7 @@
     padding: 32px 120px;
   }
 
-    @include tablet {
+  @include tablet {
     padding: 32px 72px;
   }
 
@@ -40,7 +40,6 @@
     @include tablet {
       padding: 32px 120px;
     }
-
   }
 
   &__links {
